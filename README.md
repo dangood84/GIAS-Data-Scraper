@@ -18,6 +18,50 @@ Welcome to **Dan Good's** public GIAS-Data-Scraper repository. The GIAS-Data-Scr
 
 This repository serves as a resource for learning and implementing data-scraping/data-driven automation techniques using Cypress and excel and possibly a useful utility for scraping data from a small selection of schools. Feel free to explore, modify, and contribute!
 
+
+
+## Running the Cypress Tests
+
+In VS Code in the Terminal at the bottom of the screen ensure you're in the root directory of the project in "PopulateTrueSchoolDataFromGIAS"
+
+Run the command
+
+``` bash
+npm install
+```
+
+**To run Cypress visually in the test runner** 
+
+enter the command:
+
+```bash
+npx cypress open
+```
+
+**OR...**
+
+```bash
+npm run cy:open
+```
+
+Click on the End-to-End testing option and click on the link to the spec file.
+
+**To run Cypress in headless mode from the command-line** 
+
+enter the command:
+
+```bash
+npx cypress run
+```
+
+**OR...**
+
+```bash
+npm run cy:run
+```
+
+
+
 ## Version History
 
 - Version 2.3 - (Current) - Introduced (quick-and-dirty) waiting at the end of each iteration so that the WAF isn't triggered

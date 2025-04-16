@@ -1,0 +1,24 @@
+{
+  "name": "populatetrueschooldatafromfiat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cypress": "^14.3.0"
+  },
+  "devDependencies": {
+    "@cypress/webpack-dev-server": "^4.0.2",
+    "@types/node": "^22.14.1",
+    "@types/xlsx": "^0.0.35",
+    "fs": "^0.0.1-security",
+    "typescript": "^5.8.3",
+    "xlsx": "^0.18.5"
+  }
+}

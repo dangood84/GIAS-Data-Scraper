@@ -11,7 +11,7 @@ Welcome to **Dan Good's** public GIAS-Data-Scraper repository. The GIAS-Data-Scr
 
 ## Limitations
 
-- The more rows of data in the "sheet1" datasheet the slower the script will become over time.  I have run the script with 191-odd schools at once I needed to check against the Manage School Improvement database but the iterations were certainly a lot slower in the second-half of the Excel data/script-at-runtime.
+- The more rows of data in the "sheet1" datasheet the slower the script will become over time.  I have run the script with 191-odd schools once when I needed to check against the Manage School Improvement database but the iterations were certainly a lot slower in the second-half of the Excel data/script-at-runtime.
 
 
 ## Purpose
@@ -28,10 +28,10 @@ This repository serves as a resource for learning and implementing data-scraping
 - Version 1.8 - Validated for Cypress cross-origin 503 errors
 - Version 1.7 - Validated for GIAS pages with missing "Location" tab and "Region" data and Increased Redirection Limit in cypress.config.ts so script doesn't bomb-out prematurely
 - Version 1.6 - Validated for GIAS pages with missing OFSTED links within the "Details" tab
-- Versiom 1.5 - Validate against "Unknown" subjudgements on OFSTED site
-- Version 1.4 - Validate for no "Religious character" field in "Details" tab
-- Version 1.3 - Validate for no "Previous URN" within the Links tab
-- Version 1.2 - Changed WriteExcel() function in cypress.config.ts to overwrite output data instead of appending it in "UpdatedData" worksheet
+- Versiom 1.5 - Validated against "Unknown" subjudgements on OFSTED site
+- Version 1.4 - Validated for no "Religious character" field in "Details" tab
+- Version 1.3 - Validated for no "Previous URN" within the Links tab
+- Version 1.2 - Changed WriteExcelFile() function in cypress.config.ts to overwrite output data instead of appending it in "UpdatedData" worksheet
 - Version 1.1 - Fixed locators to extract URNs and Previous URNs properly
 - Version 1.0 - 
 

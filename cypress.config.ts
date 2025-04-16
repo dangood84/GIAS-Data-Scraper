@@ -30,7 +30,6 @@ export default defineConfig({
           return xlsx.utils.sheet_to_json(worksheet);
         },
 
-        // Task to write data to Excel file
 // Task to write data to Excel file
 writeExcelFile(rows: { [key: string]: any }[]) {
   const filePath = path.join(__dirname, 'cypress/fixtures', 'schools-to-lookup.xlsx');

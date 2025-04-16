@@ -174,7 +174,7 @@ describe("Enrich school data from GIAS site", () => {
                                   $l.text().trim() || "Unknown";
                               });
                           });
-                          // OK - SO .SUBJUDGEMENTS PARTIAL-CONTAINER DOESN'T EXISTS - OH WELL - SET THEM TO "UNKNOWN"
+                          // OK - SO .SUBJUDGEMENTS PARTIAL-CONTAINER DOESN'T EXIST - OH WELL - SET THEM TO "UNKNOWN"
                         } else {
                           ofstedData["Quality of education"] = "Unknown";
                           ofstedData["Behaviour and attitudes"] = "Unknown";

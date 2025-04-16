@@ -62,7 +62,7 @@ describe("Enrich school data from GIAS site", () => {
         }
       });
 
-      // Main Details
+      // Main Details Tab
       cy.contains("a", "Details").click();
       cy.get(".govuk-summary-list")
         .first()
@@ -109,7 +109,7 @@ describe("Enrich school data from GIAS site", () => {
           // OK - SO OFSTED LINK HREF ATTR EXISTS IN LINK - GREAT!
           if (href) {
             const secureHref = href.replace(/^http:/, "https:");
-            // SWITCHINE DOMAINS HERE SO NEED CY.ORIGIN - EXTRA YUCKY AAS SWITCHING FROM HTTPS TO HTTP
+            // SWITCHING DOMAINS HERE SO NEED CY.ORIGIN - EXTRA YUCKY AAS SWITCHING FROM HTTPS TO HTTP
             cy.origin(
               "https://reports.ofsted.gov.uk",
               { args: { secureHref } },
